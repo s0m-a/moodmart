@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "scheme": "moodmart",
+    "name": "moodmart",
+    "slug": "moodmart",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "extra": {
+      "youtubeApiKey": "AIzaSyBHHZDuhcVa5VZMsgFBgdjWkgsCDInGo4g",
+      "tmdbapikey": "e0fee11d34aa99415d2c6d14c4f39c91"
+    },
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ]
+  }
+}

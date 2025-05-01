@@ -1,0 +1,52 @@
+/MoodMart
+├── /assets                  # Static assets like images, icons, fonts, etc.
+│   ├── /images              # Image assets
+│   ├── /icons               # Icon assets (SVGs, PNGs, etc.)
+│   └── /fonts               # Custom fonts (if any)
+│
+├── /components              # Reusable components (UI elements)
+│   ├── /Button.js           # Reusable button component
+│   ├── /MoodSelector.js     # Mood selection component
+│   ├── /Card.js             # Reusable card component
+│   └── /...
+│
+├── /constants               # Constants (e.g., colors, strings, configuration)
+│   ├── /colors.js           # Color constants (for NativeWind)
+│   └── /strings.js          # Strings for localization
+│
+├── /screens                 # All the screens in your app (views)
+│   ├── /HomeScreen.js       # Home screen
+│   ├── /MoodScreen.js       # Mood selection screen
+│   ├── /WatchScreen.js      # Watch section screen
+│   ├── /MovieScreen.js      # Movie section screen
+│   └── /...
+│
+├── /navigation             # Navigation logic (React Navigation files)
+│   ├── /AppNavigator.js     # Main navigator (stack, tab, etc.)
+│   └── /AuthNavigator.js    # Navigator for authentication-related screens
+│
+├── /services                # API and business logic
+│   ├── /api.js              # API calls (fetching data from external APIs)
+│   └── /auth.js             # Authentication service (e.g., login, registration)
+│
+├── /store                   # State management (e.g., Redux, Zustand)
+│   ├── /moodStore.js        # Store related to mood tracking
+│   └── /cartStore.js        # Store for cart management (if you add e-commerce)
+│
+├── /utils                   # Utility functions
+│   ├── /validation.js       # Input validation functions
+│   ├── /formatter.js        # Format data (like dates, numbers, etc.)
+│   └── /...
+│
+├── /context                 # Context API (if you use context for state management)
+│   ├── /UserContext.js      # User authentication context
+│   └── /MoodContext.js      # Mood context
+│
+├── /styles                  # Global styles and theme (if you use any)
+│   ├── /tailwind.config.js  # Tailwind configuration (NativeWind or custom config)
+│   └── /theme.js            # Custom theme (colors, fonts, etc.)
+│
+├── App.js                   # Main entry point of the app
+├── babel.config.js          # Babel configuration
+├── package.json             # NPM dependencies
+└── /assets                  # Static assets (images, fonts, etc.)
