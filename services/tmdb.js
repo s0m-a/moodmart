@@ -1,6 +1,7 @@
 import Constants from "expo-constants"
 import AsyncStorage from "@react-native-async-storage/async-storage"
-const tmdbApiKey = "e0fee11d34aa99415d2c6d14c4f39c91";
+const tmdbApiKey = Constants.expoConfig.extra.tmdbapikey;
+
 
 export const fetchMovies = async (mood)=>{
     const currentMood = mood ? mood.toLowerCase() : 'happy';

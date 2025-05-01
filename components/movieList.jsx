@@ -30,6 +30,8 @@ const MovieList = ({mood}) => {
                 />
                 <Text style={styles.movieTitle}>{item.title}</Text>
                 <Text>Rating: {item.vote_average}</Text>
+                <Text style={styles.movieTitle}>Description: {item.overview}</Text>
+                
             </TouchableOpacity>
         );
     };

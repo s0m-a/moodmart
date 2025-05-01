@@ -1,7 +1,7 @@
 import Constants from 'expo-constants'; 
 import AsyncStorage from '@react-native-async-storage/async-storage';
+const API_KEY = Constants.expoConfig.extra.youtubeApiKey;
 
-const API_KEY = "AIzaSyBHHZDuhcVa5VZMsgFBgdjWkgsCDInGo4g";
 
 export const fetchVidoes = async () => {
   const cacheKey = 'videos_mukbang';
