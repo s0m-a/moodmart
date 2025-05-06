@@ -32,7 +32,7 @@ export const fetchVidoes = async () => {
 
     // 3. Cache the result
     await AsyncStorage.setItem(cacheKey, JSON.stringify(data.items));
-    console.log(data.items)
+
     return data.items;
 
   } catch (e) {

@@ -13,7 +13,7 @@ export default function Layout() {
   if (!fontsLoaded) return null;
   return (
     <View style={styles.container}>
-     <Navbar mood={mood} />
+     <Navbar />
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen
           name="(tabs)"

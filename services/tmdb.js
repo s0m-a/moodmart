@@ -4,7 +4,8 @@ const tmdbApiKey = Constants.expoConfig.extra.tmdbapikey;
 
 
 export const fetchMovies = async (mood)=>{
-    const currentMood = mood ? mood.toLowerCase() : 'happy';
+    const currentMood = typeof mood === 'string' ? mood.toLowerCase() : '';
+
       // Define genre IDs for different moods
   const moodGenres = {
     happy: [28, 35, 10751, 16], // Action, Comedy, Family, Animation

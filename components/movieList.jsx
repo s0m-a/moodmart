@@ -33,6 +33,7 @@ const MovieList = ({mood}) => {
                 <Text style={styles.movieTitle}>Description: {item.overview}</Text>
                 
             </TouchableOpacity>
+            
         );
     };
     

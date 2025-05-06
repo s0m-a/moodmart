@@ -27,7 +27,9 @@ const EmojiMoodScreen = () => {
             // Save the updated moods array back to AsyncStorage
             await AsyncStorage.setItem('moods', JSON.stringify(moods))
             setSelectedMood(moodDate);
-            navigation.navigate('index', { mood: label }); // Pass mood to WatchList screen
+    // Navigate to the "index" screen inside the tab navigator
+          navigation.navigate('(tabs)', { screen: 'index' });
+
         } catch (error) {
             console.error("Error saving mood:", error)
         }
