@@ -1,7 +1,7 @@
 import { Text, TouchableOpacity, View, StyleSheet } from 'react-native'
 import { useState } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useNavigation } from '@react-navigation/native'; 
+import { useRouter } from 'expo-router';
 
 const emojis = [
     { emoji: '😊', label: 'Happy' },
@@ -13,7 +13,7 @@ const emojis = [
 
 const EmojiMoodScreen = () => {
     const [selectedMood, setSelectedMood] = useState(null)
-    const navigation = useNavigation();
+    const router = useRouter()
     const saveMood = async (emojis, label)=>{
         try {
             const moodDate = {
@@ -27,8 +27,7 @@ const EmojiMoodScreen = () => {
             // Save the updated moods array back to AsyncStorage
             await AsyncStorage.setItem('moods', JSON.stringify(moods))
             setSelectedMood(moodDate);
-    // Navigate to the "index" screen inside the tab navigator
-          navigation.navigate('(tabs)', { screen: 'index' });
+          router.push("./index")
 
         } catch (error) {
             console.error("Error saving mood:", error)

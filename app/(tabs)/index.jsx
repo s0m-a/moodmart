@@ -60,7 +60,6 @@ const handleViewMoreMovies = () => {
   WebBrowser.openBrowserAsync(searchUrl);
 };
 const Home = () => {
-      const route = useRoute(); // Use route to access passed parameters
       const [mood, setMood] = useState(null);
       const[isNewDay, setIsNewDay] = useState(false)
       const [hasNavigated, setHasNavigated] = useState(false);
